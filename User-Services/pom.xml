@@ -61,7 +61,7 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-bootstrap</artifactId>
-			<version>3.1.1</version>
+			<version>3.1.4</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
@@ -70,7 +70,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-netflix-eureka-client</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 			<version>3.1.4</version>
 		</dependency>
 
