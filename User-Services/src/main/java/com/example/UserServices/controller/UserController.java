@@ -117,7 +117,7 @@ public class UserController {
 
     }
 
-    private ResponseEntity<List<Carro>> fallBackSaveCarro(@PathVariable("id") Long id, @RequestBody Carro carro, RuntimeException e){
+    private ResponseEntity<Carro> fallBackSaveCarro(@PathVariable("id") Long id, @RequestBody Carro carro, RuntimeException e){
         return new ResponseEntity("El usuario " + id + " lo sentimos no podemos guardar tus autos", HttpStatus.OK);
 
     }
@@ -127,13 +127,13 @@ public class UserController {
 
     }
 
-    private ResponseEntity<List<Moto>> fallBackSaveMoto(@PathVariable("id") Long id, @RequestBody Moto moto, RuntimeException e){
+    private ResponseEntity<Moto> fallBackSaveMoto(@PathVariable("id") Long id, @RequestBody Moto moto, RuntimeException e){
         return new ResponseEntity("El usuario " + id + " lo sentimos no podemos guardar tus motos", HttpStatus.OK);
 
     }
 
 
-    private ResponseEntity<List<Moto>> fallBackGetTodos(@PathVariable("id") Long id, RuntimeException e){
+    private ResponseEntity<Map<String,Object>> fallBackGetTodos(@PathVariable("id") Long id, RuntimeException e){
         return new ResponseEntity("El usuario " + id + " lo sentimos no podemos mostrar todos sus vehiculos", HttpStatus.OK);
 
     }
